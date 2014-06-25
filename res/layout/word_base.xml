@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@id/baseHeaderView"
+        style="@style/titleTextStyle"
+        android:text="【基本释义】" />
+
+    <TextView
+        android:id="@id/baseView"
+        style="@style/wordTextStyle" />
+
+    <TextView
+        android:id="@id/exHeaderView"
+        style="@style/titleTextStyle"
+        android:text="【例句】" />
+
+    <TextView
+        android:id="@id/exView"
+        style="@style/wordTextStyle" />
+
+    <TextView
+        android:id="@id/noteHeaderView"
+        style="@style/titleTextStyle"
+        android:text="【学习笔记】" />
+
+    <TextView
+        android:id="@id/noteView"
+        style="@style/wordTextStyle" />
+
+</LinearLayout>

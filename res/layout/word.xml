@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/wordNameLayout" android:background="@drawable/round_grey_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentTop="true">
+        <TextView android:textSize="22.0sp" android:textColor="@color/wordName" android:gravity="center" android:id="@id/wordNameTextView" android:background="@drawable/cat_icon_background" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+        <RatingBar android:id="@id/wordRatingbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/wordNameTextView" android:layout_above="@id/wordDiffTextView" style="@style/wordRatingbar" />
+        <TextView android:textSize="18.0sp" android:textColor="@*android:color/black" android:gravity="center" android:id="@id/wordDiffTextView" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_toRightOf="@id/wordNameTextView" android:layout_above="@id/wordSymbolTextView" />
+        <TextView android:textSize="16.0sp" android:textColor="@*android:color/black" android:gravity="center" android:id="@id/wordSymbolTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/wordNameTextView" android:layout_alignBottom="@id/wordNameTextView" />
+        <ImageView android:id="@id/wordSoundView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/sound" android:layout_toRightOf="@id/wordSymbolTextView" android:layout_alignTop="@id/wordSymbolTextView" android:layout_alignBottom="@id/wordSymbolTextView" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/baseLayout" android:background="@drawable/round_grey_bg" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:layout_above="@id/wordAdContainer" android:layout_below="@id/wordNameLayout">
+        <ScrollView android:background="@*android:color/transparent" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/word_base" />
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout android:id="@id/wordAdContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:layout_above="@id/bottomContainer" />
+    <RelativeLayout android:id="@id/bottomContainer" android:background="@drawable/round_grey_bg" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentBottom="true"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <include layout="@layout/bottom" />
+    </RelativeLayout>
+</RelativeLayout>

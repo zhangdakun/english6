@@ -1,0 +1,38 @@
+﻿What day is it today? 
+今天星期几？
+It's Monday today. 
+今天是星期一。
+What's the date today? 
+今天是几号？
+It's January the 15th, 1999. 
+今天是1999年1月15日。
+What month is this? 
+现在是几月？
+It's December. 
+现在是十二月。
+What year is this? 
+今年是哪一年？
+It's the year of 1999. 
+今年是1999年。
+It is six o’clock. 
+现在是六点钟。 
+It is seven past nine. 
+现在是九点过七分。 
+It is a few minutes after three. 
+现在是三点过几分。 
+It is a quarter to ten. 
+现在是十点差一刻
+What will you do during this weekend? 
+这周末你干什么？
+Does the shop open at 9 am on weekdays? 
+这家店平日是早上9点开门吗？
+It opens at 8 am on weekdays, but at 9 at weekends.
+平日上午8点开，但周末9点开。
+What will you do the day after on next? 
+后天你干什么？
+What did you do the week before last? 
+上上星期你干了什么？
+I'll work for the next 5 days. 
+我要工作5天（从明天算起）
+It's been 5 years since I last saw you. 
+我已5年没见你了。

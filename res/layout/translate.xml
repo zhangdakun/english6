@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_background" >
+
+    <RelativeLayout
+        android:id="@id/transTitleContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@id/transReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15.0dip"
+            android:background="@drawable/back_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:lines="1"
+            android:singleLine="true"
+            android:text="在线翻译"
+            android:textColor="#ff000000"
+            android:textSize="17.0dip"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@id/transSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15.0dip"
+            android:background="@drawable/translate_setting_bg" />
+    </RelativeLayout>
+
+    <View
+        android:id="@id/splitLine"
+        style="@style/headerSpliteLineStyle"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/transTitleContainer"
+        android:background="@drawable/splite_line_bg" />
+
+    <RelativeLayout
+        android:id="@id/main_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splitLine"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip" >
+
+        <EditText
+            android:id="@id/translateEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_grey_bg"
+            android:hint="请输入要翻译的内容"
+            android:lines="2"
+            android:paddingLeft="32.0dip"
+            android:paddingRight="32.0dip"
+            android:textSize="16.0sp" />
+
+        <ImageView
+            android:id="@id/transClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/translateEditText"
+            android:layout_alignLeft="@id/translateEditText"
+            android:layout_alignTop="@id/translateEditText"
+            android:src="@drawable/clear" />
+
+        <ImageView
+            android:id="@id/transGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/translateEditText"
+            android:layout_alignRight="@id/translateEditText"
+            android:layout_alignTop="@id/translateEditText"
+            android:src="@drawable/forward" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@id/translateResultView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/transAdContainer"
+        android:layout_below="@id/main_container"
+        android:layout_margin="10.0dip"
+        android:background="@drawable/round_grey_bg"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="18.0sp" />
+
+    <LinearLayout
+        android:id="@id/transAdContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/transControl"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@id/transControl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ad_container"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:background="@drawable/round_grey_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5.0dip"
+        android:paddingTop="5.0dip" >
+
+        <ImageView
+            android:id="@id/transCopy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60.0dip"
+            android:src="@drawable/copy" />
+
+        <ImageView
+            android:id="@id/transShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/share" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/ad_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" />
+
+</RelativeLayout>

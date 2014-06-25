@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_selector" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:textColor="@*android:color/black" android:gravity="center_vertical" android:id="@id/unitWordName" android:paddingLeft="10.0dip" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="100.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textColor="@*android:color/black" android:gravity="center_vertical" android:id="@id/unitWordMean" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/unitWordName" android:layout_centerVertical="true" />
+</RelativeLayout>

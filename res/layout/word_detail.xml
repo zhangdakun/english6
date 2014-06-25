@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_background" >
+
+    <RelativeLayout
+        android:id="@id/searchWordTitleContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@id/searchWordReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15.0dip"
+            android:background="@drawable/back_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:lines="1"
+            android:singleLine="true"
+            android:text="词汇信息"
+            android:textColor="#ff000000"
+            android:textSize="17.0dip"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View
+        android:id="@id/searchWordSplitLine"
+        style="@style/headerSpliteLineStyle"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/searchWordTitleContainer"
+        android:background="@drawable/splite_line_bg" />
+
+    <LinearLayout
+        android:id="@id/searchWordTitleLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchWordSplitLine"
+        android:layout_margin="10.0dip"
+        android:background="@drawable/round_grey_bg"
+        android:gravity="center_vertical"
+        android:minHeight="80.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@id/searchWordTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:textColor="@color/wordName"
+            android:textSize="24.0sp" />
+
+        <TextView
+            android:id="@id/searchWordSymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchWordTitleLayout"
+        android:layout_margin="10.0dip"
+        android:background="@drawable/round_grey_bg"
+        android:paddingTop="10.0dip" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:scrollbars="none" >
+
+            <include layout="@layout/word_base" />
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/adLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+        </LinearLayout>
+</RelativeLayout>

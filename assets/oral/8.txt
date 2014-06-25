@@ -1,0 +1,30 @@
+﻿What would you like to eat? 
+你想吃点什么？
+Are you ready to order? 
+你要点菜了吗？
+I'd like some steak and bread. 
+我要牛排和面包。
+What would you like for dessert? 
+你要什么甜点？
+I'll have some ice cream. 
+我要冰淇淋。
+Do you want some fruit? 
+你要水果吗？
+Yes, please. I want an apple. 
+是的，我要一个苹果。
+Anything to drink? 
+喝点什么？
+A small glass of whisky, please. 
+请来一小杯威士忌。
+Here is your food. 
+你的菜来了。
+Bring me the bill please. 
+请买单。
+Can I pay by check or credit card? 
+我能用支票或信用卡吗？
+Sorry, we only take cash. 
+对不起，我们只收现金。
+Here you are. 
+给。
+Here is your change. 
+找您的钱。

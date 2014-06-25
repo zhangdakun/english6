@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.myanns.simple.english"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="5.6.20" >
+
+    <application
+        android:configChanges="keyboardHidden|orientation"
+        android:icon="@drawable/icon_72"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" >
+        <activity
+            android:name="com.simple.english.WelcomeActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.simple.english.MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.simple.english.LearnActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.simple.english.SearchActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.simple.english.TranslateActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.simple.english.WordActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.simple.english.DailyOralActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.simple.english.FamousActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.simple.english.NewWordsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.simple.english.SettingActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.simple.english.DailyOralDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.simple.english.WordDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.simple.english.SelfTestActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.simple.english.ReviewActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.simple.english.SfBeginActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.simple.english.NewWordAddActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+
+                <!-- 添加必须的组件 -->
+        <activity
+	        android:name="net.youmi.android.AdBrowser"
+	        android:configChanges="keyboard|keyboardHidden|orientation|screenSize"            
+	        android:theme="@android:style/Theme.Light.NoTitleBar" >
+	    </activity>
+	    <service
+	        android:name="net.youmi.android.AdService"
+	        android:exported="false" >
+	    </service>
+	    <receiver 
+	        android:name="net.youmi.android.AdReceiver" >
+	        <intent-filter>
+	            <action android:name="android.intent.action.PACKAGE_ADDED" />
+	            <data android:scheme="package" />
+	        </intent-filter>
+	    </receiver> 
+	    
+	    <!-- 配置SmartBanner -->
+     	<activity
+		    android:name="net.youmi.android.SmartBannerActivity"
+		    android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+		    android:theme="@style/Transparent">        
+	    </activity>
+	    <service
+		    android:name="net.youmi.android.SmartBannerService"
+		    android:exported="false">        
+	    </service>
+	    
+          <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="53a3f12c56240b6897007bcc" >
+        </meta-data>
+    </application>
+<supports-screens
+        android:smallScreens="true" 
+        android:normalScreens="true" 
+        android:largeScreens="true" 
+        android:anyDensity="true"
+    />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 配置权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/> 
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> 
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <!--以下为可选权限-->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+</manifest>

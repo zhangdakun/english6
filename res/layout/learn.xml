@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_background" >
+
+    <RelativeLayout
+        android:id="@id/learnTitleContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@id/learnReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15.0dip"
+            android:background="@drawable/back_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:lines="1"
+            android:singleLine="true"
+            android:text="词汇单元"
+            android:textColor="#ff000000"
+            android:textSize="17.0dip"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View
+        android:id="@id/learnSplitLine"
+        style="@style/headerSpliteLineStyle"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/learnTitleContainer"
+        android:background="@drawable/splite_line_bg" />
+
+    <ViewFlipper
+        android:id="@id/learnViewFlipper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/pageBar"
+        android:layout_below="@id/learnSplitLine" />
+    <LinearLayout
+            android:id="@+id/adLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            >
+    </LinearLayout>
+    <com.simple.english.widget.PageBar
+        android:id="@id/pageBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/adLayout"
+        android:layout_marginBottom="10.0dip"
+        android:gravity="center" />
+
+
+</RelativeLayout>

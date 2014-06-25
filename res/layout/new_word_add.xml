@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/nwAddTitleContainer" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/nwAddReturn" android:background="@drawable/back_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="17.0dip" android:textStyle="bold" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="添加生词" android:lines="1" android:singleLine="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/nwAddSplitLine" android:background="@drawable/splite_line_bg" android:layout_width="fill_parent" android:layout_below="@id/nwAddTitleContainer" style="@style/headerSpliteLineStyle" />
+    <LinearLayout android:orientation="vertical" android:id="@id/newWordAddLayout" android:background="@drawable/round_grey_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_below="@id/nwAddSplitLine">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@*android:color/black" android:gravity="left|center" android:id="@id/newWordAddNameTitleView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="词汇名称" android:layout_alignParentTop="true" />
+        <EditText android:gravity="left|center" android:id="@id/newWordAddNameView" android:background="@drawable/editshape" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginBottom="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/round_grey_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_above="@id/nwBottomBtnLayout" android:layout_below="@id/newWordAddLayout">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@*android:color/black" android:gravity="left|center" android:id="@id/newWordAddContentTitleView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="释义" />
+        <EditText android:gravity="left|center" android:id="@id/newWordAddContentView" android:background="@drawable/editshape" android:layout_width="fill_parent" android:layout_height="fill_parent" android:lines="6" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/nwBottomBtnLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_alignParentBottom="true">
+        <Button android:textSize="18.0sp" android:id="@id/nwAddConfirmBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="@string/confirm" />
+        <Button android:textSize="18.0sp" android:id="@id/nwAddCancelBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" />
+    </LinearLayout>
+</RelativeLayout>

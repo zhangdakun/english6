@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/reviewTitleContainer" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/reviewReturn" android:background="@drawable/back_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="17.0dip" android:textStyle="bold" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="今日复习" android:lines="1" android:singleLine="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/reviewSplitLine" android:background="@drawable/splite_line_bg" android:layout_width="fill_parent" android:layout_below="@id/reviewTitleContainer" style="@style/headerSpliteLineStyle" />
+    <ListView android:id="@id/reviewListView" android:background="@drawable/round_grey_bg" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:cacheColorHint="@*android:color/transparent" android:divider="@drawable/splite_line_bg" android:dividerHeight="2.0px" android:layout_below="@id/reviewSplitLine" />
+    <TextView android:textSize="16.0sp" android:textColor="@*android:color/black" android:gravity="center" android:id="@id/reviewEmptyView" android:background="@drawable/round_grey_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:minHeight="48.0dip" android:text="今天没有复习计划" android:layout_below="@id/reviewSplitLine" />
+</RelativeLayout>

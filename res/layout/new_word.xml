@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/nwTitleContainer" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/newWordReturn" android:background="@drawable/back_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="17.0dip" android:textStyle="bold" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="生词本" android:lines="1" android:singleLine="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/nwSplitLine" android:background="@drawable/splite_line_bg" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_below="@id/nwTitleContainer" />
+    <ListView android:id="@id/nwListView" android:background="@drawable/round_grey_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:cacheColorHint="@*android:color/transparent" android:divider="@drawable/splite_line_bg" android:dividerHeight="2.0px" android:layout_above="@id/nwFootView" android:layout_below="@id/nwSplitLine" />
+    <ImageView android:id="@id/nwFootView" android:background="@drawable/round_grey_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/add" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+</RelativeLayout>

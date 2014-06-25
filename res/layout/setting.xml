@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/settingTitleContainer" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/settingReturn" android:background="@drawable/back_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="17.0dip" android:textStyle="bold" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="系统设置" android:lines="1" android:singleLine="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/settingSplitLine" android:background="@drawable/splite_line_bg" android:layout_width="fill_parent" android:layout_below="@id/settingTitleContainer" style="@style/headerSpliteLineStyle" />
+    <LinearLayout android:orientation="vertical" android:id="@id/reviewTipLayout" android:layout_below="@id/settingSplitLine" style="@style/settingLayout">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:text="复习计划提醒" style="@style/settingText" />
+            <CheckBox android:id="@id/settingReviewCheckbox" style="@style/settingRight" />
+        </RelativeLayout>
+        <View android:background="@drawable/splite_line_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:text="每日提醒时间" style="@style/settingText" />
+            <TextView android:textSize="16.0sp" android:id="@id/settingReviewTime" android:text="12:30" style="@style/settingRight" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/learnTipLayout" android:layout_below="@id/reviewTipLayout" style="@style/settingLayout">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:text="自动朗诵单词" style="@style/settingText" />
+            <CheckBox android:id="@id/settingLearnSoundCheckbox" style="@style/settingRight" />
+        </RelativeLayout>
+        <View android:background="@drawable/splite_line_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:text="自动进入上次学习单元" style="@style/settingText" />
+            <CheckBox android:id="@id/settingAutoEnterLearnUnit" style="@style/settingRight" />
+        </RelativeLayout>
+        <RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:enabled="false" android:text="单词释义延迟显示" style="@style/settingText" />
+            <CheckBox android:id="@id/settingLearnLazyCheckbox" style="@style/settingRight" />
+        </RelativeLayout>
+        <View android:background="@drawable/splite_line_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:text="延迟显示时间(毫秒)" style="@style/settingText" />
+            <Spinner android:entries="@array/learnLazy" android:id="@id/settingLearnLazyTime" style="@style/settingRight" />
+        </RelativeLayout>
+        <View android:background="@drawable/splite_line_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:text="例句中词汇高亮" style="@style/settingText" />
+            <CheckBox android:id="@id/settingLearnHighlightCheckbox" style="@style/settingRight" />
+        </RelativeLayout>
+        <View android:background="@drawable/splite_line_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:text="在线翻译引擎" style="@style/settingText" />
+            <Spinner android:entries="@array/translateEngine" android:id="@id/translateEngineSpinner" style="@style/settingRight" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/callbackTipLayout" android:visibility="gone" android:layout_below="@id/learnTipLayout" style="@style/settingLayout">
+        <RelativeLayout android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:text="意见反馈" style="@style/settingText" />
+            <ImageView android:id="@id/settingCallback" android:src="@drawable/arrow_right_small" style="@style/settingRight" />
+        </RelativeLayout>
+        <View android:background="@drawable/splite_line_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:text="关于易单词" style="@style/settingText" />
+            <ImageView android:id="@id/settingAbout" android:src="@drawable/arrow_right_small" style="@style/settingRight" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

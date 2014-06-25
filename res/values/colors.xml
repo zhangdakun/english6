@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bgcolor">#ffdcdcdc</color>
+    <color name="drawerbg">#ffdbeaf9</color>
+    <color name="pageTopColor">#ff0f6abd</color>
+    <color name="pageNormalColor">#ffd3e9f3</color>
+    <color name="normalBg">#fff4f4f4</color>
+    <color name="wordName">#ff77a22e</color>
+    <color name="itemClickBg">#ffa6ffa6</color>
+</resources>

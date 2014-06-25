@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="categoryIconBgStyle">
+        <item name="android:paddingLeft">25.0px</item>
+        <item name="android:paddingTop">28.0px</item>
+        <item name="android:layout_height">138.0px</item>
+    </style>
+    <style name="headerSpliteLineStyle">
+        <item name="android:layout_height">2.0px</item>
+        <item name="android:layout_marginLeft">9.0px</item>
+        <item name="android:layout_marginTop">0.0px</item>
+        <item name="android:layout_marginRight">9.0px</item>
+        <item name="android:layout_marginBottom">12.0dip</item>
+    </style>
+    <style name="wordTextStyle">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@*android:color/black</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:paddingLeft">28.0dip</item>
+        <item name="android:paddingRight">28.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="titleTextStyle" parent="@style/wordTextStyle">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@*android:color/black</item>
+        <item name="android:paddingLeft">20.0dip</item>
+    </style>
+    <style name="bottomStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="wordRatingbar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progress">3</item>
+        <item name="android:progressDrawable">@drawable/ratingbar</item>
+        <item name="android:numStars">5</item>
+        <item name="android:stepSize">1.0</item>
+    </style>
+    <style name="settingLayout">
+        <item name="android:background">@drawable/editshape</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:layout_marginBottom">10.0dip</item>
+    </style>
+    <style name="settingText">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@*android:color/black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20.0dip</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="settingRight">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">20.0dip</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="newWordAddDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="sfLayout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/sf_backgroud</item>
+        <item name="android:descendantFocusability">afterDescendants</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+        <item name="android:minHeight">50.0dip</item>
+    </style>
+    
+        <style name="Transparent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+</resources>

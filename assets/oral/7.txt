@@ -1,0 +1,30 @@
+﻿Hello. Can I see Mr. Green? 
+你好，我能见格林先生吗？
+Do you have an appointment? 
+你有预约吗？
+Sorry, I don't. 
+对不起，我没有。
+Yes. At 3 pm. 
+是的，约的是下午3点。
+Sorry, Mr. Green can't see you now. 
+对不起，格林先生现在不能见您。
+He's on the phone. 
+他在打电话。
+Would you wait here for a minute? 
+您能在这里等一下吗？
+Would you like something to drink? 
+您想喝点什么吗？
+Tea, please. 
+我喝点茶吧。
+Mr. Green, Mr. Smith is here. 
+格林先生，史密斯先生在这里。
+You may go in now. 
+您可以进去了。
+Nice to see you, my old friend. 
+真高兴见到你，我的老朋友。
+How have you been these years? 
+这些年你怎么样？
+You've changed little. 
+你一点也没变。
+Do you still remember that Christmas?
+你仍记得那个圣诞节吗？
